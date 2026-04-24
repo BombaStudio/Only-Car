@@ -12,10 +12,12 @@ public class firstAI : MonoBehaviour
     GameObject player;
     GameController gc;
 
+    public string playertag = "Player";
+
     void Start()
     {
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag(playertag);
     }
 
     // Update is called once per frame
